@@ -8,6 +8,10 @@ A full-featured online bookstore built with the **MERN stack** (MongoDB, Express
 
 >https://friendly-smakager-060a06.netlify.app/
 
+## 🎥 Demo Preview
+
+[![Watch the demo](https://img.youtube.com/vi/Txjo6hQ3Juk/hqdefault.jpg)](https://youtu.be/Txjo6hQ3Juk)
+
 ---
 
 ## 🛠️ Tech Stack
