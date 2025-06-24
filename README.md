@@ -6,7 +6,7 @@ A full-featured online bookstore built with the **MERN stack** (MongoDB, Express
 
 ## 🚀 Live Preview
 
->to be hosted soon!
+>https://friendly-smakager-060a06.netlify.app/
 
 ---
 
