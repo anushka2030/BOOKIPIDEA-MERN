@@ -10,7 +10,7 @@ const ForgotPassword = () => {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:1000/api/v1/forgot-password", { email });
+      await axios.post("https://bookipidea-mern.onrender.com/api/v1/forgot-password", { email });
       setMessage("Check your email for the reset link!");
     } catch (error) {
       console.log(error);

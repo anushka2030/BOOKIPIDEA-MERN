@@ -17,7 +17,7 @@ const Favourites = () => {
     const fetch = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:1000/api/v1/get-favourite-books", // Fixed URL
+          "https://bookipidea-mern.onrender.com/api/v1/get-favourite-books", // Fixed URL
           { headers }
         );
         setFavouriteBooks(response.data.data);

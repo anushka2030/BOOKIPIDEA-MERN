@@ -14,7 +14,7 @@ const OrderHistory = () =>{
   };
   useEffect(() =>{
   const fetch = async() => {
-    const response = await axios.get("http://localhost:1000/api/v1/get-order-history",
+    const response = await axios.get("https://bookipidea-mern.onrender.com/api/v1/get-order-history",
      {headers}
     );
     setOrderHistory(response.data.data);

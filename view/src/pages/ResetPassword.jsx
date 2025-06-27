@@ -18,7 +18,8 @@ const ResetPassword = () => {
 
     try {
          await axios.post(
-        `http://localhost:1000/api/v1/reset-password/${token}`,
+        `https://bookipidea-mern.onrender.com/api/v1
+/reset-password/${token}`,
         { newPassword }
       );
       setMessage('Password reset successful!');

@@ -47,7 +47,7 @@ const SignUp = () => {
     }
     try {
       const response = await axios.post(
-        "http://localhost:1000/api/v1/sign-up",
+        "https://bookipidea-mern.onrender.com/api/v1/sign-up",
         values
       );
       alert(response.data.message || "SignUp Successful!");

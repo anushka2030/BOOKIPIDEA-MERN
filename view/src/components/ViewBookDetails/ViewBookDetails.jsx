@@ -22,7 +22,7 @@ const ViewBookDetails = () => {
     const fetch = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:1000/api/v1/get-book-by-id/${id}`
+          `https://bookipidea-mern.onrender.com/api/v1/get-book-by-id/${id}`
         );
         setData(response.data.data);
         console.log(response.data.data);
@@ -58,7 +58,7 @@ const ViewBookDetails = () => {
   const handleFavourite = async () => {
     try {
       const response = await axios.put(
-        "http://localhost:1000/api/v1/add-book-to-favourite",
+        "https://bookipidea-mern.onrender.com/api/v1/add-book-to-favourite",
         {},
         { headers }
       );
@@ -70,7 +70,7 @@ const ViewBookDetails = () => {
   };
   const handleCart = async () =>{
     const response = await axios.put(
-      "http://localhost:1000/api/v1/add-to-cart",
+      "https://bookipidea-mern.onrender.com/api/v1/add-to-cart",
       {},
       {headers}
     );
@@ -84,7 +84,7 @@ const ViewBookDetails = () => {
   
     try {
       const response = await axios.delete(
-        "http://localhost:1000/api/v1/delete-book",
+        "https://bookipidea-mern.onrender.com/api/v1/delete-book",
         {headers}
       );
       alert(response.data.message);

@@ -20,7 +20,7 @@ const Cart = () => {
   useEffect(() => {
     const fetchCart = async () => {
       try {
-        const res = await axios.get("http://localhost:1000/api/v1/get-user-cart", { headers });
+        const res = await axios.get("https://bookipidea-mern.onrender.com/api/v1/get-user-cart", { headers });
         setCart(res.data.data);
         calculateTotal(res.data.data);
       } catch (error) {
@@ -41,7 +41,8 @@ const Cart = () => {
     setIsPlacingOrder(true);
     try {
       const response = await axios.post(
-        `http://localhost:1000/api/v1/place-order`,
+        `https://bookipidea-mern.onrender.com/api/v1
+/place-order`,
         {order: Cart},
         {headers}
       );
@@ -58,7 +59,8 @@ const Cart = () => {
   // Remove an item from the cart
   const deleteItem = async (bookid) => {
     try {
-      await axios.put(`http://localhost:1000/api/v1/remove-from-cart/${bookid}`, {}, { headers });
+      await axios.put(`https://bookipidea-mern.onrender.com/api/v1
+/remove-from-cart/${bookid}`, {}, { headers });
       const updatedCart = Cart.filter((item) => item._id !== bookid);
       setCart(updatedCart);
       calculateTotal(updatedCart);

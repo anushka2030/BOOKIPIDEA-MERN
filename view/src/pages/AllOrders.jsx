@@ -15,7 +15,7 @@ const AllOrders = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await axios.get("http://localhost:1000/api/v1/get-all-orders", {
+        const response = await axios.get("https://bookipidea-mern.onrender.com/api/v1/get-all-orders", {
           headers
         });
         setAllOrders(response.data.data);
@@ -31,7 +31,8 @@ const AllOrders = () => {
     setLoading(true);
     try {
       await axios.put(
-        `http://localhost:1000/api/v1/update-status/${orderId}`,
+        `https://bookipidea-mern.onrender.com/api/v1
+/update-status/${orderId}`,
         { status: newStatus },
         { headers }
       );

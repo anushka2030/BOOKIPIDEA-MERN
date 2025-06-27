@@ -35,7 +35,8 @@ const UpdateBook = () => {
         };
 
         const response = await axios.get(
-          `http://localhost:1000/api/v1/get-book-by-id/${id}`,
+          `https://bookipidea-mern.onrender.com/api/v1
+/get-book-by-id/${id}`,
           { headers }
         );
 
@@ -81,7 +82,8 @@ const UpdateBook = () => {
       };
 
       const response = await axios.put(
-        `http://localhost:1000/api/v1/update-book/${id}`,
+        `https://bookipidea-mern.onrender.com/api/v1
+/update-book/${id}`,
         bookData,
         { 
           headers: {
