@@ -103,7 +103,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-6 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="text-gray-800 text-lg">
-              &copy; 2024 BOOKIPIDEA. All rights reserved. Made by NUZKA
+              &copy; 2024 BOOKIPIDEA. All rights reserved. Made by Anushka
             </div>
             <div className="flex items-center gap-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-amber-400 transition-colors">Privacy Policy</a>
